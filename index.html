@@ -9,6 +9,7 @@
   </head>
   <body>
     <div id="header">
+      <h2>How's the weather in...</h2>
       <form action="">
         <input
           type="text"
@@ -16,18 +17,19 @@
           placeholder="Enter a location"
         /><button type="button" id="search_button">Search</button>
       </form>
+      <button id="temperature_toggle" type="button">Celsius</button>
     </div>
     <div id="main">
       <div id="location"></div>
       <div id="weather_cards_container">
         <div class="weather_cards" id="first_day">
           <h2 class="day_titles" id="first_day_title"></h2>
-          <div id="overall_weather_div">
+          <div class="overall_weather_div">
             <img src="" alt="" id="first_day_icon" />
             <p id="first_day_condition"></p>
           </div>
           <div class="weather_conditions_div">
-            <div id="temp_first"></div>
+            <div id="temp_first" class="temperatures"></div>
             <div id="wind_first"></div>
             <div id="humidity_first"></div>
             <div id="rain_first"></div>
@@ -39,12 +41,12 @@
         </div>
         <div class="weather_cards" id="second_day">
           <h2 class="day_titles" id="second_day_title"></h2>
-          <div id="overall_weather_div">
+          <div class="overall_weather_div">
             <img src="" alt="" id="second_day_icon" />
             <p id="second_day_condition"></p>
           </div>
           <div class="weather_conditions_div">
-            <div id="temp_second"></div>
+            <div id="temp_second" class="temperatures"></div>
             <div id="wind_second"></div>
             <div id="humidity_second"></div>
             <div id="rain_second"></div>
@@ -52,12 +54,12 @@
         </div>
         <div class="weather_cards" id="third_day">
           <h2 class="day_titles" id="third_day_title"></h2>
-          <div id="overall_weather_div">
+          <div class="overall_weather_div">
             <img src="" alt="" id="third_day_icon" />
             <p id="third_day_condition"></p>
           </div>
           <div class="weather_conditions_div">
-            <div id="temp_third"></div>
+            <div id="temp_third" class="temperatures"></div>
             <div id="wind_third"></div>
             <div id="humidity_third"></div>
             <div id="rain_third"></div>
