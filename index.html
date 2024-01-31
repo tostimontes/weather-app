@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,21 +10,20 @@
   <body>
     <div id="header">
       <form action="">
-        <input type="text" id="search_location" placeholder="Enter a location"/><button
-          type="button"
-          id="search_button"
-        >
-          Search
-        </button>
+        <input
+          type="text"
+          id="search_location"
+          placeholder="Enter a location"
+        /><button type="button" id="search_button">Search</button>
       </form>
     </div>
     <div id="main">
       <div id="location"></div>
       <div id="weather_cards_container">
         <div class="weather_cards" id="first_day">
-          <h2 class="day_titles">Today</h2>
+          <h2 class="day_titles" id="first_day_title"></h2>
           <div id="overall_weather_div">
-            <img src="" alt="" />
+            <img src="" alt="" id="first_day_icon" />
             <p id="first_day_condition"></p>
           </div>
           <div class="weather_conditions_div">
@@ -39,9 +38,9 @@
           <p id="sunset"></p>
         </div>
         <div class="weather_cards" id="second_day">
-          <h2 class="day_titles">Tomorrow</h2>
+          <h2 class="day_titles" id="second_day_title"></h2>
           <div id="overall_weather_div">
-            <img src="" alt="" />
+            <img src="" alt="" id="second_day_icon" />
             <p id="second_day_condition"></p>
           </div>
           <div class="weather_conditions_div">
@@ -52,9 +51,9 @@
           </div>
         </div>
         <div class="weather_cards" id="third_day">
-          <h2 class="day_titles"></h2>
+          <h2 class="day_titles" id="third_day_title"></h2>
           <div id="overall_weather_div">
-            <img src="" alt="" />
+            <img src="" alt="" id="third_day_icon" />
             <p id="third_day_condition"></p>
           </div>
           <div class="weather_conditions_div">
