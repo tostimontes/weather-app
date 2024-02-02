@@ -42,7 +42,7 @@ function formatTime(timeString) {
 async function fetchWeather(selectedLocation) {
   try {
     const response = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=ad93355e721349a09c8150136242801&q=${selectedLocation}&days=3`,
+      `https://api.weatherapi.com/v1/forecast.json?key=ad93355e721349a09c8150136242801&q=${selectedLocation}&days=3`,
       { mode: 'cors' }
     );
     const responseData = await response.json();
