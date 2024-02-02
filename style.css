@@ -21,6 +21,26 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  background: linear-gradient(
+      217deg,
+      rgba(255, 255, 0, 0.2),
+      rgba(255, 255, 0, 0) 70.71%
+    ),
+    linear-gradient(
+      127deg,
+      rgba(191, 10, 10, 0.2),
+      rgba(64, 224, 208, 0) 70.71%
+    ),
+    linear-gradient(
+      336deg,
+      rgba(144, 238, 144, 0.2),
+      rgba(49, 164, 49, 0) 70.71%
+    ),
+    linear-gradient(
+      45deg,
+      rgba(128, 128, 128, 0.2),
+      rgba(128, 128, 128, 0) 70.71%
+    );
 }
 
 #header {
@@ -90,7 +110,8 @@ body {
   height: 37rem;
   border: 0;
   border-radius: 1rem;
-  box-shadow: 1px 1px 1px 1px gray;
+  box-shadow: 1px 1px 6px 3px gray;
+  background-color: rgba(127, 255, 212, 0.42);
 }
 
 .overall_weather_div {
@@ -101,7 +122,39 @@ body {
 .weather_conditions_div {
   display: grid;
   grid:
-    'a b' 1fr 1fr
-    'c d' 1fr 1fr
+    'a b' 1fr
+    'c d' 1fr
     / 1fr 1fr;
+  height: 60%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.temperatures {
+  grid-area: a;
+}
+
+.winds {
+  grid-area: b;
+}
+
+.humidities {
+  grid-area: c;
+}
+
+.rains {
+  grid-area: d;
+}
+
+svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+#sun_div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
